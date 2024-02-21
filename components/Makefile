@@ -1,8 +1,10 @@
 REGISTRY ?= kubeflownotebookswg
 TAG ?= $(shell git describe --tags --always --dirty)
 
-SUBDIRS := access-management admission-webhook centraldashboard crud-web-apps/jupyter crud-web-apps/tensorboards \
-			crud-web-apps/volumes notebook-controller profile-controller tensorboard-controller example-notebook-servers
+#SUBDIRS := access-management admission-webhook centraldashboard crud-web-apps/jupyter crud-web-apps/tensorboards \
+#			crud-web-apps/volumes notebook-controller profile-controller tensorboard-controller example-notebook-servers
+
+SUBDIRS := notebook-controller 
 
 .PHONY: build-all
 build-all: $(SUBDIRS)
