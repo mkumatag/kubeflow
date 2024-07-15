@@ -5,5 +5,5 @@ resources:
   - ../default
 images:
   - name: quay.io/opendatahub/odh-notebook-controller
-    newName: quay.io/opendatahub/odh-notebook-controller
-    newTag: 1.7-35b81f5
+    newName: na.artifactory.swg-devops.com/sys-linux-power-team-ftp3distro-docker-images-docker-local/odh-notebook-controller
+    newTag: v1.7.0-13
